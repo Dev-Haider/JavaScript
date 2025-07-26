@@ -17,8 +17,6 @@ Displays the complete multiplication table in the browser console.
 
 Handles invalid input gracefully.
 
-------------------------------------------------------------
-
 🧠 How to Use:
 Copy and paste the code into a browser console or any JavaScript editor.
 

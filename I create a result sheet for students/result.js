@@ -1,3 +1,4 @@
+
 let maths= Number(prompt("Enter marks of  maths: "))
 let English= Number(prompt("Enter marks of English: "))
 let chemistry= Number(prompt("Enter marks of chemistry: "))
