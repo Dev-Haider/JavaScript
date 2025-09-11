@@ -1,0 +1,45 @@
+🎮 Word Scramble Game (JavaScript Console)
+📌 Overview
+
+This is a console-based word scramble game built using JavaScript.
+The game picks a random word, scrambles its letters, and asks the player to guess the correct word.
+
+🚀 Features
+
+Welcome menu with Play or Quit options.
+
+Random word selection from a word list.
+
+Words are scrambled using a shuffle algorithm.
+
+User guesses until the correct answer is given.
+
+Displays Correct 🎉 or Wrong ❌ messages.
+
+Simple console + prompt/alert interaction.
+
+🕹️ How to Play
+
+Run the script in a JavaScript environment that supports prompt and alert (e.g., browser console).
+
+Choose:
+
+1 → Start the game
+
+2 → Quit
+
+If you start the game:
+
+A scrambled word will appear.
+
+Type your guess.
+
+If wrong → Try again until you guess correctly.
+
+You can replay multiple times.
+
+🛠️ Technologies Used
+
+JavaScript (vanilla)
+
+Browser console + prompt/alert
