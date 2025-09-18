@@ -18,4 +18,4 @@ This repository is designed for:
 
 🌐 Anyone interested in simple web-based applications
 
-📄 How to Use
+
