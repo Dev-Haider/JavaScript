@@ -1,0 +1,76 @@
+Find Duplicates in an Array
+📌 Overview
+
+This project is a simple JavaScript program that finds duplicate numbers in an array.
+It asks the user to input numbers (separated by spaces), then returns the list of numbers that appear more than once.
+
+⚡ Features
+
+Takes user input from the browser using prompt().
+
+Splits input into an array of numbers.
+
+Uses Set to track seen numbers and duplicates efficiently.
+
+Returns duplicates in a new array.
+
+Outputs results in the console.
+
+🖥️ How It Works
+
+The user enters numbers separated by spaces.
+Example input:
+
+1 2 3 4 5 6 7 8 9 9 10 1 2
+
+
+The program converts the input string into an array of numbers.
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 10, 1, 2]
+
+
+The findDuplicates function checks for numbers that occur more than once.
+
+The result is displayed in the console.
+
+📝 Code
+function findDuplicates(arr) {
+  let seen = new Set();
+  let duplicates = new Set();
+  
+  for (let num of arr) {
+    if (seen.has(num)) {
+      duplicates.add(num);
+    } else {
+      seen.add(num);
+    }
+  }
+  
+  return Array.from(duplicates);
+}
+
+let userInput = prompt("Enter numbers separated by spaces:");
+let numbers = userInput.split(" ").map(Number);
+
+console.log("Duplicates are:", findDuplicates(numbers));
+
+✅ Example Run
+
+Input:
+
+1 2 3 4 5 6 7 8 9 9 10 1 2
+
+
+Output (in console):
+
+Duplicates are: [1, 2, 9]
+
+🚀 Usage
+
+Copy the code into a .html file inside a <script> tag.
+
+Open the file in any web browser.
+
+Enter numbers when prompted.
+
+Check the console (F12 → Console tab) to see results.
