@@ -1,0 +1,74 @@
+Friend Lookup Program
+
+This JavaScript program allows users to check if a friend’s name exists in a predefined list of people, and if so, displays their country of residence.
+
+📌 Features
+
+Stores a list of people with their names and countries.
+
+Prompts the user to enter a friend’s name.
+
+Performs a case-insensitive search using Array.find() and toLowerCase().
+
+Displays:
+
+✅ If found → the person’s name and country.
+
+❌ If not found → "Not in the list."
+
+📝 Code Explanation
+let people = [
+  { name: "Alice", country: "USA" },
+  { name: "Bob", country: "UK" },
+  { name: "Charlie", country: "USA"},
+  { name: "babar", country: "KSA" },
+  { name: "shop", country: "spain" }
+];
+
+let user = prompt("Enter your friend name:");
+
+let found = people.find(person => person.name.toLowerCase() === user.toLowerCase());
+
+if (found) {
+  alert(`${found.name} is in the list and lives in ${found.country}`);
+} else {
+  alert("Not in the list");
+}
+
+🔎 How It Works
+
+The program defines an array of objects (people) with name and country.
+
+It asks the user to input a friend’s name via prompt().
+
+It uses find() to search the array for a matching name (ignoring case).
+
+If a match is found → shows the friend’s country.
+If not → displays a "Not in the list" message.
+
+🚀 Example Usage
+
+Input:
+
+Enter your friend name: bob
+
+
+Output (alert):
+
+Bob is in the list and lives in UK
+
+
+Input:
+
+Enter your friend name: john
+
+
+Output (alert):
+
+Not in the list
+
+🛠️ Technologies Used
+
+JavaScript
+
+Browser prompt() and alert()
