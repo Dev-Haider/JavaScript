@@ -1,0 +1,46 @@
+Writing
+Unique Characters Checker
+
+This is a simple JavaScript program that checks whether all characters in a given string are unique or if there are repetitions.
+
+📌 Features
+Ignores spaces in the input.
+Treats uppercase and lowercase letters as the same (case-insensitive).
+Displays a message whether the string contains only unique characters or has repeated ones.
+🛠️ How It Works
+The program asks the user to enter a string using prompt().
+It converts the input to lowercase and removes spaces.
+It uses a JavaScript Set to compare the number of unique characters with the total length of the processed string.
+Finally, it shows a message using alert():
+✅ "All characters are unique"
+❌ "Characters are repeated"
+💻 Example Usage
+function here(str) {
+  str = str.toLowerCase().replace(/\s+/g,"");
+  if (new Set(str).size === str.length) {
+    return "All characters are unique";
+  } else {
+    return "Characters are repeated";
+  }
+}
+
+let userInput = prompt("Enter a string:");
+alert(here(userInput));
+
+🧪 Sample Inputs/Outputs
+
+Input: Hello
+Output: Characters are repeated
+
+Input: Python
+Output: All characters are unique
+
+Input: A B C
+Output: All characters are unique
+
+🚀 How to Run
+Copy the code into a .html file inside a <script> tag.
+Open the file in a web browser.
+Enter any string in the pop-up input box.
+See the result in an alert message.
+ 
